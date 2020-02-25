@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+.input {
+	height: 40px;
+	width: 250px;
+	font-size: 20px;
+}
+
+.bt {
+	width: 150px;
+	height: 50px;
+	background-color: green;
+	color: black;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.bt:hover {
+	background-color: gray;
+	color: orange;
+}
+</style>
+
+
+</head>
+<body>
+	<div style="margin-left: 300px;">
+		<h1>${login} merchant login</h1>
+		<form action="/add" method="post">
+			<table>
+				<tr>
+					<th style="font-size: 20px; padding-right: 150px; color: gray;">Items
+						details</th>
+				</tr>
+				<tr>
+					<td><input class="input" type="hidden" name="username"
+						value="${login}" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td><input class="input" type="text" name="name"
+						placeholder="Enter your items name"></td>
+				</tr>
+				<tr>
+					<td><input class="input" type="text" name="price"
+						placeholder="Enter your MRP"></td>
+				</tr>
+				<tr>
+					<td><input class="input" type="text" name="quantity"
+						placeholder="How  Much You have "></td>
+				</tr>
+
+				<tr>
+					<td><input type="submit" value="Add Items" class="bt"></td>
+				</tr>
+
+			</table>
+		</form>
+	</div>
+</body>
+</html>

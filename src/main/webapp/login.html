@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+.log {
+	width: 250px;
+	height: 40px;
+	font-size: 30px;
+	background-color: silver;
+	color: black;
+}
+
+.bt {
+	width: 150px;
+	height: 60px;
+	background-color: green;
+	color: black;
+	cursor: pointer;
+}
+
+.bt:hover {
+	background-color: gray;
+	color: orange;
+}
+</style>
+</head>
+<body style="margin-left: 200px;">
+	<div>
+		<p style="font-size: 50px; color: gray; margin-left: 200px;">
+			<u>UserLogin</u>
+		</p>
+		<form action="login" method="post">
+			<input type="text" class="log" name="username" placeholder="Enter UserName">
+			<input type="password" class="log"name="password" placeholder="Enter password">
+		     <br><br><br>
+			<input type="submit" class="bt"  style="margin-left: 160px;" value="LogIn">
+		</form>
+		<br><br>
+		<a href="signin.jsp" style="margin-left: 400px; font-size: 20px;font-weight: bold;">Create user</a>
+	</div>
+</body>
+</html>
